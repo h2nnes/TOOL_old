@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .lefteye {
+    width: 30px;
+    height: 29px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+    animation: rotateSmiley 3s linear infinite;
+
+  }
+
+  .righteye {
+    width: 44px;
+    height: 45px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 40px;
+    animation: rotateSmiley 3s linear infinite;
+  }
+
+  .smiley {
+    width: 100px;
+    height: 80px;
+    border-color: black;
+    border-width: 8px;
+    border-radius: 50%;
+    border: 2px;
+    background-color: yellow;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 60px;
+    animation: rotateSmiley 5s linear infinite; /* 4s is the duration, you can adjust it */
+  }
+
+  .schrift {
+    width: 150px;
+    font-style: italic;
+  }
+  
+  @keyframes rotateSmiley {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
