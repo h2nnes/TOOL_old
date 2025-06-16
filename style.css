@@ -1,0 +1,73 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+canvas {
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+#ui {
+  background: white;
+  height: 100vh;
+}
+
+#artboard {
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ui-component {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding: 10px 20px 10px;
+}
+
+.ui-text {
+  padding: 10px 20px 10px;
+}
+
+input {
+  width: 100%;
+}
+
+input[type=range] {
+  border: 1px solid black;
+  box-shadow: none;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  background: lightgray;
+  height: 20px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background: black;
+  border: 0;
+  box-shadow: none;
+  width: 5px;
+  height: 20px;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
+  background: white;
+}
